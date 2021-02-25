@@ -48,7 +48,7 @@
     service.getMatchedMenuItems = function (searchTerm) {
       var response = $http({
         method:"GET",
-        url:(ApiBasePath+"/menu_items.json")
+        url:("https://davids-restaurant.herokuapp.com/menu_items.json")
     }).then((response) => {
         var menu_items = response.data.menu_items;
         //console.log("Service: ",menu_items);

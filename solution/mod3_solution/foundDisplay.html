@@ -1,10 +1,4 @@
-<div>
-  <ol>
-    <li class="dctrl-li" ng-repeat="item in dctrl.found">
-      {{item.short_name}}: {{item.name | uppercase}}
-      <button class="dctrl-btn" ng-click="dctrl.onRemove({index:$index})">Don't want this one!</button>
-      <p>{{item.description}}</p>
-    </li>
-  </ol>
-  <div class="dctrl-warning"ng-if="dctrl.found.length<1">Nothing found</div>
-</div>
+<ul>
+    <li ng-repeat="item in fiCtrl.foundList">({{item.short_name}}) {{item.name}} <br><br>{{item.description}} <br><br> <input type="button" value="Don't want this one!" ng-click="fiCtrl.onRemove({index: $index})"></li>
+</ul>
+<p class="error">Nothing is found!</p>
