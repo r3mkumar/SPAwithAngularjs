@@ -9,30 +9,6 @@ input[type="text"] {
   float: left;
   margin-left: 10px;
 }
-.found-style{
-  display: block;
-  clear: both;
-}
-.dctrl-warning{
-  color: red;
-  font-weight: bold;
-}
-.dctrl-li{
-  padding: 5px;
-}
-.dctrl-li p{
-  margin-top: 10px;
-}
-.dctrl-btn{
-    background-color: #d4b1f4;
-    border-radius: 5%;
-    border: none;
-    left: 550px;
-    position: absolute;
-}
-.dctrl-btn:hover{
-  background-color: #eddefa;
-}
 .loader {
   display: none;
   margin-left: 5px;
